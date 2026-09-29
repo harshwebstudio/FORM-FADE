@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
 
 :root {
-    --bg: #0d0d0d;
-    --bg-soft: #151515;
-    --card: #191919;
-    --text: #f5f2ed;
-    --muted: #a7a29b;
-    --gold: #E0A96D;
-    --border: rgba(224, 169, 109, 0.25);
+    --bg: #08131F;
+    --bg-soft: #0D1B29;
+    --card: #102333;
+    --text: #F4F7FA;
+    --muted: #9DAAB5;
+    --accent: #4DA3FF;
+    --accent-soft: #8CC8FF;
+    --border: rgba(77, 163, 255, 0.28);
     --white-border: rgba(255, 255, 255, 0.09);
 }
 
@@ -47,7 +48,7 @@ a {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(13, 13, 13, 0.88);
+    background: rgba(8, 19, 31, 0.88);
     backdrop-filter: blur(14px);
     border-bottom: 1px solid var(--white-border);
 }
@@ -66,7 +67,7 @@ a {
 }
 
 .logo span {
-    color: var(--gold);
+    color: var(--accent);
     margin: 0 2px;
 }
 
@@ -76,13 +77,13 @@ nav {
 }
 
 nav a {
-    color: #c9c4bc;
+    color: #C7D0D8;
     font-size: 0.9rem;
     transition: 0.3s ease;
 }
 
 nav a:hover {
-    color: var(--gold);
+    color: var(--accent-soft);
 }
 
 .menu-btn {
@@ -102,8 +103,16 @@ nav a:hover {
     align-items: center;
     position: relative;
     background:
-        radial-gradient(circle at 75% 35%, rgba(224, 169, 109, 0.13), transparent 30%),
-        linear-gradient(135deg, #0d0d0d, #11100f);
+        radial-gradient(
+            circle at 75% 35%,
+            rgba(77, 163, 255, 0.14),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #08131F,
+            #0B1724
+        );
 }
 
 .hero::before {
@@ -111,7 +120,7 @@ nav a:hover {
     position: absolute;
     width: 420px;
     height: 420px;
-    border: 1px solid rgba(224, 169, 109, 0.15);
+    border: 1px solid rgba(77, 163, 255, 0.16);
     border-radius: 50%;
     right: -150px;
     top: 20%;
@@ -126,7 +135,7 @@ nav a:hover {
 
 .eyebrow,
 .section-label {
-    color: var(--gold);
+    color: var(--accent-soft);
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 3px;
@@ -143,7 +152,7 @@ nav a:hover {
 
 .hero h1 span,
 .cta h2 span {
-    color: var(--gold);
+    color: var(--accent-soft);
 }
 
 .hero-text {
@@ -154,7 +163,7 @@ nav a:hover {
 }
 
 .location {
-    color: #bdb8b0;
+    color: #B8C2CA;
     font-size: 0.9rem;
 }
 
@@ -172,30 +181,30 @@ nav a:hover {
     justify-content: center;
     min-height: 52px;
     padding: 0 24px;
-    border: 1px solid var(--gold);
+    border: 1px solid var(--accent);
     font-weight: 600;
     font-size: 0.9rem;
     transition: 0.3s ease;
 }
 
 .btn.primary {
-    background: var(--gold);
-    color: #17120d;
+    background: var(--accent);
+    color: #06111D;
 }
 
 .btn.primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 30px rgba(224, 169, 109, 0.2);
+    box-shadow: 0 12px 30px rgba(77, 163, 255, 0.22);
 }
 
 .btn.secondary {
     background: transparent;
-    color: var(--gold);
+    color: var(--accent-soft);
 }
 
 .btn.secondary:hover {
-    background: var(--gold);
-    color: #17120d;
+    background: var(--accent);
+    color: #06111D;
 }
 
 /* SECTIONS */
@@ -240,7 +249,7 @@ nav a:hover {
 }
 
 .service-card span {
-    color: var(--gold);
+    color: var(--accent-soft);
     font-size: 0.75rem;
     letter-spacing: 2px;
 }
@@ -275,7 +284,7 @@ nav a:hover {
 .about-line {
     width: 70px;
     height: 1px;
-    background: var(--gold);
+    background: var(--accent);
     margin: 30px 0;
 }
 
@@ -300,10 +309,18 @@ nav a:hover {
     padding: 22px;
     font-size: 1.1rem;
     letter-spacing: 3px;
-    color: var(--gold);
+    color: var(--accent-soft);
     background:
-        linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent),
-        radial-gradient(circle at center, #3b332a, #151515 65%);
+        linear-gradient(
+            to top,
+            rgba(4, 12, 20, 0.86),
+            transparent
+        ),
+        radial-gradient(
+            circle at center,
+            #1A344A,
+            #0D1B29 65%
+        );
     border: 1px solid var(--white-border);
 }
 
@@ -313,7 +330,11 @@ nav a:hover {
     padding: 120px 0;
     text-align: center;
     background:
-        radial-gradient(circle at center, rgba(224, 169, 109, 0.12), transparent 35%),
+        radial-gradient(
+            circle at center,
+            rgba(77, 163, 255, 0.13),
+            transparent 35%
+        ),
         var(--bg-soft);
 }
 
@@ -345,7 +366,7 @@ nav a:hover {
 }
 
 .contact-card span {
-    color: var(--gold);
+    color: var(--accent-soft);
     font-size: 0.7rem;
     letter-spacing: 2px;
 }
@@ -387,7 +408,7 @@ footer {
 
 .copyright {
     text-align: center;
-    color: #68645f;
+    color: #687782;
     font-size: 0.75rem;
     margin-top: 40px;
 }
@@ -419,7 +440,7 @@ footer {
         display: none;
         flex-direction: column;
         gap: 18px;
-        background: #111;
+        background: #0B1724;
         border-bottom: 1px solid var(--white-border);
     }
 
@@ -482,7 +503,8 @@ footer {
     .footer-content {
         flex-direction: column;
     }
-  }
+}
+
 /* =========================
    MOBILE RESPONSIVE FIX
    ========================= */
@@ -640,7 +662,6 @@ img {
     }
 }
 
-
 /* SMALL PHONES */
 
 @media (max-width: 380px) {
@@ -668,4 +689,4 @@ img {
     .image-placeholder {
         min-height: 270px;
     }
-}
+    }
